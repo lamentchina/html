@@ -1,0 +1,33 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+html #left,
+body #left,
+html #right,
+body #right {
+  position: absolute;
+  height: 100%;
+  width: 400px;
+  top: 0;
+}
+html #left,
+body #left {
+  left: 0;
+  background: -webkit-linear-gradient(left, #999, #d7d7d7);
+  background: linear-gradient(left, #999, #d7d7d7);
+}
+html #center,
+body #center {
+  height: 100%;
+  margin: 0 400px 0 400px;
+  background: -webkit-linear-gradient(left, #d7d7d7, #fff, #d7d7d7);
+  background: linear-gradient(left, #d7d7d7, #fff, #d7d7d7);
+}
+html #right,
+body #right {
+  right: 0;
+  background: -webkit-linear-gradient(left, #d7d7d7, #999);
+  background: linear-gradient(left, #d7d7d7, #999);
+}
