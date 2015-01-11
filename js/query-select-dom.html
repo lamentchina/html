@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta chartset='utf-8'>
+  <title>querySelector 和 querySelector </title>
+</head>
+<body>
+querySelector按css规范实现，即css标识符也不能以数字开头。 
+<hr>
+
+<div class="test" id="testId"> 
+<p><span>Test</span></p> 
+</div> 
+<script type="text/javascript"> 
+var testElement= document.getElementById('testId'); 
+var element = testElement.querySelector('.test span'); 
+var elementList = document.querySelectorAll('.test span'); 
+console.log(element); // <span>Test</span> 
+console.log(elementList); // 1 
+</script> 
+
+
+<div><p id="foo"><span></span></p></div>  
+  
+<script type="text/javascript">
+  var foo = document.getElementById("foo");  
+// should return nothing  
+// will return the SPAN (booo!)  
+  // var a1 = [1,2,3];
+  // var a2 = new Array(1,2,3);
+  // var o1 = new Object();
+  // console.log(a1);
+  // console.log(a2);
+  // console.log(o1);
+// alert(foo.querySelectorAll('div span').length)  
+
+console.time('querySelector');
+for (var i = 0; i < 100000; i++) {
+  document.querySelector("#testId");
+}
+console.timeEnd('querySelector');
+//querySelector: 19.780ms
+
+console.time('getElementById');
+for (var i = 0; i < 100000; i++) {
+  document.getElementById("testId");
+}
+console.timeEnd('getElementById');
+//getElementById: 6.576ms
+//
+//
+console.time('querySelectorAll');
+for (var i = 0; i < 10000; i++) {
+  document.querySelectorAll(".test");
+}
+console.timeEnd('querySelectorAll');
+//querySelectorAll: 7.205ms
+
+console.time('getElementsByClassName');
+for (var i = 0; i < 10000; i++) {
+  document.getElementsByClassName("test");
+}
+console.timeEnd('getElementsByClassName');
+//getElementsByClassName: 1.949ms
+
+</script>
+
+
+</body>
+</html>
