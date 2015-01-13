@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>闭包在 IE 中的内存引用问题</title>
+<script language="javascript" type="text/javascript">
+//由于IE对javascript 对象和COM对象使用不同的垃圾收集例程，因此闭包在IE中会导致一些特殊的问题。具体来说，如果闭包的作用域链中保存着一个HTML元素，那么就意味着该元素将无法销毁。
+
+//触发assign2  element一直占用内存。由于匿名函数保存了一个对assign2  ()的活动对象的引用，因此就会导致无法减少element的引用数
+function assign2(){
+ var element=document.getElementById('td');
+ element.onclick=function(){
+  
+  alert(element.id);
+  }
+}
+
+//解决内存泄露
+function assign(){
+ var element=document.getElementById('td');
+ var id=element.id;
+ element.onclick=function(){
+  
+  alert(typeof element);
+  }
+ element=null; 
+}
+</script>
+</head>
+<body>
+<a href="javascript:assign()">你好朋友</a>
+<div id="td" style="width:200px; height:200px; background-color:#F00; border:#666 solid 1px;"></div>
+</body>
+</html>
