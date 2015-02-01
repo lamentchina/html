@@ -1,12 +1,12 @@
 ###前端组件化 CSS 框架: bootstrap 和 amaze ui
 
-#####下面是以 PC优先 角度比较的两款 css 框架. 可以在我们未来桌面 web 开发中取其精华, 方便快速开发.
+#####下面是以 PC 优先 角度比较的两款 css 框架. 可以在我们未来桌面 web 开发中取其精华, 方便快速开发. 具体 API 及 demo 案例可参见官方文档, 附文后. 这里大致描述下.
 
 1.	bootstrap
 
 	-	概览
 
-	[bootstrap](http://getbootstrap.com/) 近些年很流行, 可能是目前市场占有最高的 css 框架, 尤其适用于企业建站, 平台搭建等用途. css 基于media queries实现了响应式设计, 并且 bootstrap 对不同内核浏览器和 js , css 都有着良好的支持.
+	[bootstrap](http://getbootstrap.com/) 近些年很流行, 可能是目前市场占有最高的 css 框架, 尤其适用于企业建站, 平台搭建等用途. css 基于 media queries 实现了响应式设计, 并且 bootstrap 对不同内核浏览器和 js , css 都有着良好的支持.
 
 	bootstrap 源码及打包文件目录:
 
