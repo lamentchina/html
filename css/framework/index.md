@@ -1,5 +1,7 @@
 ###前端组件化 CSS 框架: bootstrap 和 amaze ui
 
+#####下面是以 PC优先 角度比较的两款 css 框架. 可以在我们未来桌面 web 开发中取其精华, 方便快速开发.
+
 1.	bootstrap
 
 	-	概览
@@ -30,7 +32,7 @@
 
 	-	模块和组件
 
-	提供了完整的 CSS 及 JS 组件 , 最新版本依赖 jQuery-1.11.2 , 官方文档实现了包括 **排版 , 代码, 表格, 表单, 按钮, 图片** 五个主要[ CSS 样式](http://getbootstrap.com/css/). 还实现或兼容了**上百种 font-face 字体图标, 下拉菜单, 按钮组, 文本框定制, 面包屑, 导航, 分页, badge, banner, 警告框, 进度条, 列表组 ** 等近20个[ CSS 组件](http://getbootstrap.com/components/). 比如, 做出如下这样一个标准的 [form](http://docs.javapk.net/jqm/demo/4.html) 还是很容易的:
+	提供了完整的 CSS 及 JS 组件 , 最新版本依赖 jQuery-1.11.2 , 官方文档实现了包括 **排版 , 代码, 表格, 表单, 按钮, 图片** 五个主要[ CSS 样式](http://getbootstrap.com/css/). 还实现或兼容了**上百种 font-face 字体图标, 下拉菜单, 按钮组, 文本框定制, 面包屑, 导航, 分页, badge, banner, 警告框, 进度条, 列表组 ** 等近20个[ CSS 组件](http://getbootstrap.com/components/). 比如, 做出如下这样一个标准的 form ([示例](http://docs.javapk.net/jqm/demo/4.html)), 还是很容易的:
 
 	![form](http://pic.yupoo.com/lamentchina_v/EoQEgviO/15fN9Z.jpg)
 
@@ -84,7 +86,9 @@
 
 	[2] bootstrap 中文网 : [http://www.bootcss.com](http://www.bootcss.com)
 
-	[3] bootstrap css tree
+	[3] amaze ui : [https://github.com/allmobilize/amazeui](https://github.com/allmobilize/amazeui)
+
+	[4] bootstrap css tree
 
 	```
 	less
@@ -160,5 +164,3 @@
 	    ├── variables.less
 	    └── wells.less
 	```
-
-	[4] amaze ui : [https://github.com/allmobilize/amazeui](https://github.com/allmobilize/amazeui)
