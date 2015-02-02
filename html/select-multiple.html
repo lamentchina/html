@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>select multiple</title>
+    <meta name="viewport" content="width=device-width,initaial-scale=1.0">
+  </head>
+  <body>
+    <div id="slt_container">
+    <input type="text" id='ipt' name="some_name" value="num">
+    <span>
+      <select id="select" name="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </span>
+    </div>
+    <script charset="utf-8">
+      var ipt = document.getElementById('ipt');
+      ipt.onclick = function(){
+        document.getElementById('select').multiple = 'multiple';
+      }
+    </script>
+  </body>
+</html>
